@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/Navbar';
 import { PetalCanvas } from './components/PetalCanvas';
 import { HeroLateWish } from './components/HeroLateWish';
@@ -51,6 +52,8 @@ export default function App() {
         <FinalLetter />
       </main>
 
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
